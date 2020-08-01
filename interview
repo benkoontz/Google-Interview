@@ -48,7 +48,7 @@ using [1,2,3,9]
 1. greet interviewers
 2. interviewer gives background so you can communicate ideas to them
 3. When they ask you your story, go deep into some project so you can describe a technical chan. It doesn't
-necessary have to be impressive (setup a website and connect to a database).
+necessary have to be impressive 
 4. There's no rules about the interviewer, anything can be said
 5. talk about technical challenges, leadership, or initiative
 6. Technical complexity is the consideration of tradeoffs, not really the number of if statements, for loops, etc
@@ -60,7 +60,7 @@ a sign that the interviwer is confused or doesn't understand your ideas.
 
 < --question 2 -->
 given a grid find the maximum number of connected colors
-this is asked because it tocuhes a lot of different areas such as tree traversal, data structures, oop
+this is asked because it touches a lot of different areas such as tree traversal, data structures, oop
 a color is connected either vertically or horizontally
 
 grid = [[0, 1, 0, 1],
