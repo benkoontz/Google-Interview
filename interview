@@ -1,0 +1,52 @@
+Google interview problem. Find the sum of numbers that add up to 8 in an array. 
+
+1. the numbers aren't sorted
+2. you can't use the same number twice
+
+[1,2,3,9] these will never add up to 8
+[1,2,4,4] thse will add up to 8 (4 and 4)
+
+find the sum of two numbers that add up to 8
+
+notes: 
+-ask for clarification
+-ask multiple questions
+-think out loud constantly becuse it gives the interviewer a chance to see your though process
+-think through everything before you write everything down
+-test the solution in real time to veryify your solution
+-think about edge cases
+
+solution using C++:
+
+
+bool HasPair(const vector<int>& data, int sum) {
+	unordered_set<int> comp; //complements
+	for(int value : data) {
+	if(comp.find(value)! = comp.end) // check if you have seen the complements, if I have seen it then return true
+		return true;
+	comp.add(sum-value); // add not the value, but the complement
+	}
+	return false;
+}
+
+hash table has a constant time lookup, but a key doesn't seem needed
+hash set all of the complements
+only look for numbers from the past
+use hashset in c++ which is an unordered set
+The solution is linear because the lookup and adding is constant
+
+using [1,2,3,9]
+1 => 7 as the complement
+2 => 6 as a complement
+3 => 5 as a complement
+9 => false
+
+
+
+
+
+
+
+
+
+
