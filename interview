@@ -80,7 +80,7 @@ def iterative(self, row, col)
 	while stack:
 		cur = stack.pop() 
 		key = str(cur[0])+ "," + str(cur[1]) // define a key for the current and next node
-		if key in visited: // if the key is true, avoid popping off the stack
+		if key in visited: 
 			continue
 		visited[key] = True
 		ans += 1
